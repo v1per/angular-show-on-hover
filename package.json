@@ -1,0 +1,14 @@
+{
+  "name": "angular-show-on-hover",
+  "version": "1.0.0",
+  "description": "Angular directive that when used on element it toggles visibility of child element based on hover state of parent element",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js"
+  },
+  "author": "Bartosz Chojnacki <bartosz.chojnacki1@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "2.8.0"
+  }
+}
