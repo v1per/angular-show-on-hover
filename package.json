@@ -14,6 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "angular": "1.4.8",
+    "angular-mocks": "1.4.8",
     "commitizen": "2.4.6",
     "cz-conventional-changelog": "1.1.5",
     "ghooks": "1.0.1",
