@@ -1,22 +1,43 @@
 {
   "name": "angular-show-on-hover",
-  "version": "1.0.0",
+  "version": "1.0.0-semantically-released",
   "description": "Angular directive that when used on element it toggles visibility of child element based on hover state of parent element",
   "main": "index.js",
   "scripts": {
+    "commit": "git-cz",
     "lint": "jshint index.js",
-    "test": "karma start"
+    "test": "karma start",
+    "test:single": "karma start --single-run",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Bartosz Chojnacki <bartosz.chojnacki1@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "angular": "1.4.8",
+    "commitizen": "2.4.6",
+    "cz-conventional-changelog": "1.1.5",
+    "ghooks": "1.0.1",
     "jasmine-core": "2.4.1",
     "jshint": "2.8.0",
     "karma": "0.13.16",
     "karma-chrome-launcher": "0.2.2",
     "karma-jasmine": "0.3.6",
+    "karma-phantomjs-launcher": "0.2.2",
     "karma-webpack": "1.7.0",
+    "phantomjs": "1.9.19",
+    "semantic-release": "^4.3.5",
     "webpack": "1.12.9"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run lint && npm run test:single"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/v1per/angular-show-on-hover.git"
   }
 }
