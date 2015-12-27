@@ -1,4 +1,4 @@
-module.exports = function () {
+(function () {
   "use strict";
 
   var moduleName = 'angular-show-on-hover';
@@ -34,7 +34,8 @@ module.exports = function () {
     };
   }
 
-  return moduleName;
-}();
+  if (typeof module !== 'undefined') {
+    module.exports = moduleName;
+  }
 
-
+}());
