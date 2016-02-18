@@ -8,6 +8,7 @@
     .directive('showOnHover', showOnHover);
 
   function showOnHover($log) {
+    "ngInject";
 
     return {
       restrict: 'A',
