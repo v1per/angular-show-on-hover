@@ -5,7 +5,7 @@
 
   angular
     .module(moduleName, [])
-    .directive('showOnHover', showOnHover);
+    .directive('showOnHover', ['$log', showOnHover]);
 
   function showOnHover($log) {
     "ngInject";
